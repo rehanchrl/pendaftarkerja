@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@index');
+
+Route::match(['get', 'post'], '/daftar', 'DaftarController@index');

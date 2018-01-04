@@ -15,6 +15,7 @@
     <h3>Random pendaftar kerja</h3>
     <hr>
     <div class="row">
+      @foreach ($pendaftar as $pencari)
       <div class="col-md-6">
         <table class="well table table-bordered">
             <tbody>
@@ -24,56 +25,27 @@
                 </td>
                 <td width="100">Nama</td>
                 <td width="1">:</td>
-                <td>Rehanchrl</td>
+                <td>{{$pencari->nama}}</td>
               </tr>
               <tr>
                 <td>Email</td>
                 <td width="1">:</td>
-                <td>Rehanchrl@rehanchrl.net</td>
+                <td>{{$pencari->email}}</td>
               </tr>
               <tr>
                 <td>pekerjaan</td>
                 <td width="1">:</td>
-                <td>Web Developer</td>
+                <td>{{$pencari->pekerjaan}}</td>
               </tr>
               <tr>
                 <td colspan="3">
-                  <a href="#" class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-search"></i> Detail Pekerja</a>
+                  <a href="{{ url("pendaftarkerja/detail".$pencari->id) }}" class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-search"></i> Detail Pekerja</a>
                 </td>
               </tr>
             </tbody>
         </table>
       </div>
-
-      <div class="col-md-6">
-        <table class="well table table-bordered">
-            <tbody>
-              <tr>
-                <td rowspan="4" width="1">
-                  <img class="img-circle" src="people.jpg" width="140" height="140">
-                </td>
-                <td width="100">Nama</td>
-                <td width="1">:</td>
-                <td>rehan</td>
-              </tr>
-              <tr>
-                <td>Email</td>
-                <td width="1">:</td>
-                <td>Rehan@rehanchrl.net</td>
-              </tr>
-              <tr>
-                <td>pekerjaan</td>
-                <td width="1">:</td>
-                <td>Web Designer</td>
-              </tr>
-              <tr>
-                <td colspan="3">
-                  <a href="#" class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-search"></i> Detail Pekerja</a>
-                </td>
-              </tr>
-            </tbody>
-        </table>
-      </div>
+      @endforeach
     </div>
     <a class="btn btn-primary" href="{{url("pendaftarkerja")}}"><i class="glyphicon glyphicon-tasks"></i> Tampilkan Semua</a>
   </div>

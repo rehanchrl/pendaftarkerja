@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\PendaftarModel;
 use Illuminate\Http\Request;
 
 class DaftarController extends Controller

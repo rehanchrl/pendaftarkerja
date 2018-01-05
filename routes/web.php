@@ -14,3 +14,5 @@
 Route::get('/', 'HomeController@index');
 
 Route::match(['get', 'post'], '/daftar', 'DaftarController@index');
+
+Route::get('/pendaftarkerja', 'PendaftarController@index');

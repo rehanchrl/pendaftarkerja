@@ -5,8 +5,8 @@
       <h1>Selamat Datang di Website Pencari Kerja</h1>
       <p>Mencari kerja tidak susah, kami akan membantu anda. Caranya dengan menekan tombol daftar kerja, maka data diri anda akan kami promosikan untuk mendapatkan pekerjaan</p>
       <p>
-        <a class="btn btn-success btn-lg" href="{{url("index.php/daftar")}}" role="button"><i class="glyphicon glyphicon-check"></i> Daftar Kerja</a>
-        <a class="btn btn-primary btn-lg" href="{{url("index.php/pendaftarkerja")}}" role="button"><i class="glyphicon glyphicon-briefcase"></i> Lihat Pendaftar Kerja</a>
+        <a class="btn btn-success btn-lg" href="{{url("daftar")}}" role="button"><i class="glyphicon glyphicon-check"></i> Daftar Kerja</a>
+        <a class="btn btn-primary btn-lg" href="{{url("pendaftarkerja")}}" role="button"><i class="glyphicon glyphicon-briefcase"></i> Lihat Pendaftar Kerja</a>
       </p>
     </div>
   </div>

@@ -21,11 +21,11 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="{{url("")}}">Home</a></li>
-            <li><a href="{{url("daftar")}}">Daftar Kerja</a></li>
-            <li><a href="{{url("pendaftarkerja")}}">Pendaftar Kerja</a></li>
-            <li><a href="{{url("tentang")}}">Tentang</a></li>
-            <li><a href="{{url("contact")}}">Contact</a></li>
+            <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{url("")}}">Home</a></li>
+            <li class="{{ Request::is('daftar') ? 'active' : '' }}"><a href="{{url("daftar")}}">Daftar Kerja</a></li>
+            <li class="{{ Request::is('pendaftarkerja') ? 'active' : '' }}"><a href="{{url("pendaftarkerja")}}">Pendaftar Kerja</a></li>
+            <li class="{{ Request::is('tentang') ? 'active' : '' }}"><a href="{{url("tentang")}}">Tentang</a></li>
+            <li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="{{url("contact")}}">Contact</a></li>
           </ul>
         </div>
       </div>

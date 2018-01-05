@@ -11,4 +11,15 @@ class PendaftarController extends Controller
       $data = array('pendaftar' => PendaftarModel::all() );
       return view('pendaftar', $data);
     }
+
+    public function detail($id)
+    {
+      $pendaftar = PendaftarModel::find($id);
+      if (count($pendaftar) > 0) {
+        $data = array('pendaftar' => $pendaftar );
+        return view("detailpendaftar", $data);
+      }else {
+        return redirect('/pendaftarkerja');
+      }
+    }
 }

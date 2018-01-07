@@ -18,3 +18,7 @@ Route::match(['get', 'post'], '/daftar', 'DaftarController@index');
 Route::get('/pendaftarkerja', 'PendaftarController@index');
 
 Route::get('/pendaftarkerja/detail/{id}', 'PendaftarController@detail');
+
+Route::get('/tentang', 'TentangController@index');
+
+Route::get('/contact', 'ContactController@index');
